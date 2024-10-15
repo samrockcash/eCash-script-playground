@@ -59,8 +59,8 @@ const WalletInfo: React.FC<Props> = ({provider, wallets, setWallets}) => {
   }
 
   function hash160ToCash(hex: string, forTestnet?: boolean, tokenSupport?: boolean) {
-    const prefix = forTestnet ? "bchtest" : "bitcoincash";
-    const type = tokenSupport ? "p2pkhWithTokens" : "p2pkh";
+    const prefix = forTestnet ? "ectest" : "ecash";
+    const type = "p2pkh";
     return encodeCashAddress({ prefix, type, payload: hexToBin(hex) }).address;
   }
 
