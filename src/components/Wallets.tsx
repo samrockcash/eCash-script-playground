@@ -9,7 +9,7 @@ import {
   generatePrivateKey,
   instantiateRipemd160,
   instantiateSha256,
-  encodeCashAddress,
+  encodeCashAddressNonStandard,
   encodePrivateKeyWif,
 } from '@bitauth/libauth'
 import CopyText from './shared/CopyText'
